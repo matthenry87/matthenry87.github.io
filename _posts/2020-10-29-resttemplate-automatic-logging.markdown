@@ -79,5 +79,7 @@ With the addition of this BeanPostProcessor, you no longer need to add the Loggi
 creation in the Config class as seen above. Adding this BeanPostProcessor and LoggingInterceptor to your common library 
 is a great way to address this cross-cutting concern, automatically adding the LoggingInterceptor to every RestTemplate defined
  in your applications, and ensuring that every outbound HTTP request is logged.
+ 
+Source code for this entry located [here](https://github.com/matthenry87/blog-code/tree/main/src/main/java/com/matthery87/blogcode/resttemplatelogging).
 
 Credit to Tristan Hanson and Chris Kirk, who's [presentation](https://youtu.be/iWQxTHoSsgY) I attended at Spring One 2019.
