@@ -8,6 +8,8 @@ categories: spring,spring boot,spring mvc,logging
 A great way to avoid repetitive log statements when logging HTTP requests sent via 
 [RestTemplate](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html) 
 is to use an [Interceptor](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/http/client/ClientHttpRequestInterceptor.html).
+Interceptors give you the ability to access/manipulate the outbound request and the response, as well as take some action before and/or
+after the request.
 
 {% highlight java %}
 @Slf4j
@@ -31,7 +33,8 @@ class LoggingInterceptor implements ClientHttpRequestInterceptor {
 }
 {% endhighlight %}
 
-Another common use of Interceptors is to add Authorization headers automatically to outbound HTTP requests. Interceptors can be added to RestTemplates like so.
+Another common use of Interceptors is to add Authorization headers automatically to outbound HTTP requests. 
+Interceptors can be added to RestTemplates like so.
 
 {% highlight java %}
 
