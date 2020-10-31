@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "@NotEmptyIfPresent Custom Validation Annotation"
-date:   2020-10-29 15:57:40 -0600
+date:   2020-10-31 15:57:40 -0600
 categories: spring,spring boot,spring mvc
 ---
 
